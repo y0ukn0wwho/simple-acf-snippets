@@ -1,0 +1,104 @@
+".text.html.php:not(.source)":
+
+  "Basic Loop":
+    "prefix": "acfrf"
+    "body": """
+    <?php
+
+    // check if the repeater field has rows of data
+    if( have_rows('${1:field_name}') ):
+
+     	// loop through the rows of data
+        while ( have_rows('${1:field_name}') ) : the_row();
+
+            // display a sub field value
+            the_sub_field('${2:field_name}');
+
+        endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+
+    ?>
+    """
+
+  "Advanced Loop":
+    "prefix": "acfrfadv"
+    "body": """
+    <?php if( have_rows('repeater_field_name') ): ?>
+
+    	<ul class="slides">
+
+    	<?php while( have_rows('repeater_field_name') ): the_row();
+
+    		// vars
+    		$image = get_sub_field('image');
+    		$content = get_sub_field('content');
+    		$link = get_sub_field('link');
+
+    		?>
+
+    		<li class="slide">
+
+    			<?php if( $link ): ?>
+    				<a href="<?php echo $link; ?>">
+    			<?php endif; ?>
+
+    				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+    			<?php if( $link ): ?>
+    				</a>
+    			<?php endif; ?>
+
+    		    <?php echo $content; ?>
+
+    		</li>
+
+    	<?php endwhile; ?>
+
+    	</ul>
+
+    <?php endif; ?>
+    """
+
+  "Basic Loop (PHP foreach loop)":
+    "prefix": "acfrfforeach"
+    "body": """
+    <?php
+
+    $rows = get_field('repeater_field_name');
+    if($rows)
+    {
+    	echo '<ul>';
+
+    	foreach($rows as $row)
+    	{
+    		echo '<li>sub_field_1 = ' . $row['sub_field_1'] . ', sub_field_2 = ' . $row['sub_field_2'] .', etc</li>';
+    	}
+
+    	echo '</ul>';
+    }
+    """
+
+  "Get the first row from a repeater":
+    "prefix": "acfrffirst"
+    "body": """
+    <?php
+
+    $rows = get_field('repeater_field_name' ); // get all the rows
+    $rand_row = $rows[ array_rand( $rows ) ]; // get a random row
+    $rand_row_image = $rand_row['sub_field_name' ]; // get the sub field value
+
+    // Note
+    // $first_row_image = 123 (image ID)
+
+    $image = wp_get_attachment_image_src( $rand_row_image, 'full' );
+    // url = $image[0];
+    // width = $image[1];
+    // height = $image[2];
+    ?>
+    <img src="<?php echo $image[0]; ?>" />
+    """
