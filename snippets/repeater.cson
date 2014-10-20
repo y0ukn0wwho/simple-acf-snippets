@@ -83,8 +83,8 @@
     }
     """
 
-  "Get the first row from a repeater":
-    "prefix": "acfrffirst"
+  "Get a random row from a repeater":
+    "prefix": "acfrfrandom"
     "body": """
     <?php
 
