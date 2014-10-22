@@ -1,6 +1,6 @@
 # ACF Snippets for Atom
 
-Snippets based on Elliot Condons original ACF documentation.
+Snippets based on Elliot Condon's original [ACF documentation](http://www.advancedcustomfields.com/resources/).
 
 ## Todo
 1. Add support for [Sublime ACF Snippets](https://github.com/iamhexcoder/acf_snippets) prefixes
