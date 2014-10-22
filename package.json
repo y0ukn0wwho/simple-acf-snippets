@@ -1,14 +1,15 @@
 {
   "name": "acf-snippets",
   "main": "./lib/acf-snippets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Advanced Custom Field snippets for Atom ",
-  "activationEvents": ["acf-snippets:toggle"],
+  "activationEvents": [
+    "acf-snippets:toggle"
+  ],
   "repository": "https://github.com/emaildano/acf-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
