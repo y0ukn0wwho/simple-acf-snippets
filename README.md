@@ -14,6 +14,7 @@ Snippet  | Description
 
 ### Image Field Snippets
 [Source](http://www.advancedcustomfields.com/resources/image/)
+
 Snippet  | Description
 ------------- | -------------
 `acf-img`  | Basic image object
