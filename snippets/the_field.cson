@@ -15,7 +15,7 @@
   "Use the_field / get_field with conditional statements":
     "prefix": "acf-tf-if"
     "body": """
-    <?php if( get_field( "${1:field_name}" ) ): ?>
+    <?php if( get_field( "${1:field_name}" ) ) : ?>
       <p><?php the_field( ${1:field_name} ); ?></p>
     <?php endif; ?>
     """
