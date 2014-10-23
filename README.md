@@ -5,6 +5,7 @@ Snippets based on Elliot Condon's original [ACF documentation](http://www.advanc
 ## Snippets
 
 ### Repeater Field Snippets
+[Source](http://www.advancedcustomfields.com/resources/repeater/)
 
 Snippet  | Description
 ------------- | -------------
@@ -12,7 +13,7 @@ Snippet  | Description
 `acf-rf-option`  | Basic loop for options page fields
 
 ### Image Field Snippets
-
+[Source](http://www.advancedcustomfields.com/resources/image/)
 Snippet  | Description
 ------------- | -------------
 `acf-img`  | Basic image object
