@@ -13,6 +13,15 @@ Snippet  | Description
 `acf-tf-id ` | Display a field value from another post
 `acf-tf-if` | Use the_field / get_field with conditional statements
 
+### Get Field Snippets
+[Documentation](http://www.advancedcustomfields.com/resources/get_field/)
+
+Snippet  | Description
+------------- | -------------
+`acf-gf`  | Get a field value from the current post
+`acf-img-id ` | Get a field value from another post
+`acf-img-url` | Use get_field with conditional statements
+
 ### Repeater Field Snippets
 [Documentation](http://www.advancedcustomfields.com/resources/repeater/)
 
