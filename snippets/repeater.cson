@@ -13,7 +13,7 @@
     """
 
   "Basic Loop for Options Fields":
-    "prefix": "acf-rf-option"
+    "prefix": "acf-rf-opt"
     "body": """
     <?php if ( have_rows('${1:field_name}', 'option') ): ?>
       <${2:ul}>
