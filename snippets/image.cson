@@ -5,7 +5,7 @@
     "body": """
     <?php
     $image = get_field('${1:field_name}');
-    if( !empty($image) ): ?>
+    if ( !empty($image) ): ?>
       <img src="<?php echo $image['${2:url}']; ?>" alt="<?php echo $image['alt']; ?>" />
     <?php endif; ?>
     """
@@ -25,7 +25,7 @@
   "image url":
     "prefix": "acf-img-url"
     "body": """
-    <?php if( get_field('${1:field_name}') ): ?>
-    	<img src="<?php the_field('${1:field_name}'); ?>" />
+    <?php if ( get_field('${1:field_name}') ): ?>
+      <img src="<?php the_field('${1:field_name}'); ?>" />
     <?php endif; ?>
     """
