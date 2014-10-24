@@ -19,8 +19,8 @@ Snippet  | Description
 Snippet  | Description
 ------------- | -------------
 `acf-gf`  | Get a field value from the current post
-`acf-img-id ` | Get a field value from another post
-`acf-img-url` | Use get_field with conditional statements
+`acf-gf-id` | Get a field value from another post
+`acf-gf-if` | Use get_field with conditional statements
 
 ### Repeater Field Snippets
 [Documentation](http://www.advancedcustomfields.com/resources/repeater/)
