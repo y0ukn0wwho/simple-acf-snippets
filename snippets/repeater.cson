@@ -8,7 +8,7 @@
         <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
           <${3:li}><?php the_sub_field('${4:field_name}'); ?></${3:li}>
         <?php endwhile; ?>
-      </${2:ul}>˜
+      </${2:ul}>
     <?php endif; ?>
     """
 
@@ -20,6 +20,6 @@
         <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
           <${3:li}><?php the_sub_field('${4:field_name}'); ?></${3:li}>
         <?php endwhile; ?>
-      </${2:ul}>˜
+      </${2:ul}>
     <?php endif; ?>
     """
