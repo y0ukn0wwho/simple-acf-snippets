@@ -39,13 +39,13 @@ Snippet  | Description
 `acf-img-id ` | Get image field by ID
 `acf-img-url` | Get full image URL
 
-## Todo
-1. Add support for [Sublime ACF Snippets](https://github.com/iamhexcoder/acf_snippets) prefixes
-2. Optional refined snippet alternatives
-3. Autocomplete suggestions
-
 ### Utilities
 
 Snippet  | Description
 ------------- | -------------
 `acf-print`  | Display an array of ACF objects
+
+## Todo
+1. Add support for [Sublime ACF Snippets](https://github.com/iamhexcoder/acf_snippets) prefixes
+2. Optional refined snippet alternatives
+3. Autocomplete suggestions
