@@ -6,7 +6,7 @@
     <?php if ( have_rows('${1:field_name}') ): ?>
       <${2:ul}>
         <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
-          <${3:li}><?php the_sub_field('${4:field_name}'); ?></${3:li}>
+          <${3:li}><?php ${4:the_sub_field}('${5:field_name}'); ?></${3:li}>
         <?php endwhile; ?>
       </${2:ul}>
     <?php endif; ?>
@@ -18,7 +18,7 @@
     <?php if ( have_rows('${1:field_name}', 'option') ): ?>
       <${2:ul}>
         <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
-          <${3:li}><?php the_sub_field('${4:field_name}'); ?></${3:li}>
+          <${3:li}><?php ${4:the_sub_field}('${5:field_name}'); ?></${3:li}>
         <?php endwhile; ?>
       </${2:ul}>
     <?php endif; ?>
