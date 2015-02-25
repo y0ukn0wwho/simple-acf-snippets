@@ -1,16 +1,12 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
-'context-menu':
-  '.overlayer':
-      'Enable ACF Snippets': 'acf-snippets:toggle'
-
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'ACF Snippets'
+      'label': 'WP Snippets'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'acf-snippets:toggle' }
+        { 'label': 'Toggle', 'command': 'wp-snippets:toggle' }
       ]
     ]
   }
-]
+]                                                                                                          
