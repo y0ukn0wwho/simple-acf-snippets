@@ -1,0 +1,25 @@
+".text.html.php:not(.source)":
+
+  "Basic Loop":
+    "prefix": "acf-rf"
+    "body": """
+    <?php if ( have_rows('${1:field_name}') ): ?>
+      <${2:ul}>
+        <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
+          <${3:li}><?php ${4:the_sub_field}('${5:field_name}'); ?></${3:li}>
+        <?php endwhile; ?>
+      </${2:ul}>
+    <?php endif; ?>
+    """
+
+  "Basic Loop for Options Fields":
+    "prefix": "acf-rf-opt"
+    "body": """
+    <?php if ( have_rows('${1:field_name}', 'option') ): ?>
+      <${2:ul}>
+        <?php while ( have_rows('${1:field_name}') ) : the_row(); ?>
+          <${3:li}><?php ${4:the_sub_field}('${5:field_name}'); ?></${3:li}>
+        <?php endwhile; ?>
+      </${2:ul}>
+    <?php endif; ?>
+    """

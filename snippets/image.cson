@@ -1,0 +1,31 @@
+".text.html.php:not(.source)":
+
+  "image":
+    "prefix": "acf-img"
+    "body": """
+    <?php
+    $image = get_field('${1:field_name}');
+    if ( !empty($image) ): ?>
+      <img src="<?php echo $image['${2:url}']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <?php endif; ?>
+    """
+
+  "image id":
+    "prefix": "acf-img-id"
+    "body": """
+    <?php
+    $image = get_field('${1:field_name}');
+    $size = '${2:full}'; // (thumbnail, medium, large, full or custom size)
+
+    if ( $image ) : ?>
+      <?php echo wp_get_attachment_image( $image, $size ); ?>
+    <?php endif;?>
+    """
+
+  "image url":
+    "prefix": "acf-img-url"
+    "body": """
+    <?php if ( get_field('${1:field_name}') ): ?>
+      <img src="<?php the_field('${1:field_name}'); ?>" />
+    <?php endif; ?>
+    """
