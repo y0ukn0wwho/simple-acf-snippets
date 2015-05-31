@@ -1,7 +1,7 @@
 {
   "name": "acf-snippets",
   "main": "./lib/acf-snippets",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Advanced Custom Field snippets for Atom",
   "keywords": [],
   "activationCommands": {
