@@ -1,10 +1,9 @@
 {
   "name": "acf-snippets",
   "main": "./lib/acf-snippets",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Advanced Custom Field snippets for Atom",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "acf-snippets:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
