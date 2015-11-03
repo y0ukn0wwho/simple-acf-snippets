@@ -45,6 +45,14 @@ Snippet  | Description
 ------------- | -------------
 `acf-print`  | Display an array of ACF objects
 
+### Subfields
+
+Snippet  | Description
+------------- | -------------
+`acf-tsf` | Display a sub field value
+`acf-gsf` | Get sub field value
+`acf-hsf` | Check if field has a sub field
+
 ## Todo
 1. Add support for [Sublime ACF Snippets](https://github.com/iamhexcoder/acf_snippets) prefixes
 2. Optional refined snippet alternatives
