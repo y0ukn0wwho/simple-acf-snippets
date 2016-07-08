@@ -6,6 +6,12 @@
     <?php the_field( "${1:field_name}" ); ?>
     """
 
+  "Display a sub field value from the current post":
+    "prefix": "acf-tsf"
+    "body": """
+    <?php the_sub_field( "${1:field_name}" ); ?>
+    """
+
   "Display a field value from another post":
     "prefix": "acf-tf-id"
     "body": """
