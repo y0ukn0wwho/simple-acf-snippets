@@ -6,6 +6,12 @@
 		<?php $${1:value} = get_field( "${2:field_name}" ); ?>
 		"""
 
+	"Get a sub field value from the current post":
+		"prefix": "acf-gsf"
+		"body": """
+		<?php $${1:value} = get_sub_field( "${2:field_name}" ); ?>
+		"""
+
 	"Get a field value from another post":
 		"prefix": "acf-gf-id"
 		"body": """
