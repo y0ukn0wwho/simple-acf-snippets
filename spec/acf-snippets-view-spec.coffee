@@ -1,4 +1,4 @@
-AcfSnippetsView = require '../lib/acf-snippets-view'
+AcfSnippetsView = require '../lib/simple-acf-snippets-view'
 
 describe "AcfSnippetsView", ->
   it "has one valid test", ->

@@ -3,7 +3,7 @@ class AcfSnippetsView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('acf-snippets')
+    @element.classList.add('simple-acf-snippets')
 
     # Create message element
     message = document.createElement('div')

@@ -1,4 +1,4 @@
-AcfSnippetsView = require './acf-snippets-view'
+AcfSnippetsView = require './simple-acf-snippets-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = AcfSnippets =
@@ -14,7 +14,7 @@ module.exports = AcfSnippets =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'acf-snippets:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'simple-acf-snippets:toggle': => @toggle()
 
   deactivate: ->
     @modalPanel.destroy()

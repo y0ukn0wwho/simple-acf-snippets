@@ -5,7 +5,7 @@
   "description": "Advanced Custom Field snippets for Atom",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "acf-snippets:toggle"
+    "atom-workspace": "simple-acf-snippets:toggle"
   },
   "repository": "https://github.com/y0ukn0wwho/simple-acf-snippets",
   "license": "MIT",
