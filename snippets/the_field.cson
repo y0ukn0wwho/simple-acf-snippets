@@ -22,6 +22,6 @@
     "prefix": "acf-tf-if"
     "body": """
     <?php if( get_field( "${1:field_name}" ) ) : ?>
-      <p><?php the_field( ${1:field_name} ); ?></p>
+      <p><?php the_field( "${1:field_name}" ); ?></p>
     <?php endif; ?>
     """
