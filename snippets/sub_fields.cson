@@ -1,17 +1,17 @@
   "Display a field value from a subfield":
     "prefix": "acf-tsf"
     "body": """
-    <?php the_sub_field( "${1:sub_field_name}"); ?>
+    <?php the_sub_field( '${1:sub_field_name}'); ?>
     """
 
   "Get a field value from a subfield":
     "prefix": "acf-gsf"
     "body": """
-    <?php $${1:value} = get_sub_field( "${2:sub_field_name}" ); ?>
+    <?php $${1:value} = get_sub_field( '${2:sub_field_name}' ); ?>
     """
 
   "Check if subfield value exists":
     "prefix": "acf-hsf"
     "body": """
-    <?php has_sub_field( "${1:sub_field_name}" ); ?>
+    <?php has_sub_field( '${1:sub_field_name}' ); ?>
     """
